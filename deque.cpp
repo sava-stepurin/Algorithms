@@ -65,7 +65,6 @@ int pop_front(Deque *d) {
 	else {
 		d->head->prev = NULL;
 	}
-	temp = NULL;
 	delete temp;
 	d->size--;
 	return info;
@@ -81,7 +80,6 @@ int pop_back(Deque *d) {
 	else {
 		d->tail->next = NULL;
 	}
-	temp = NULL;
 	delete temp;
 	d->size--;
 	return info;
