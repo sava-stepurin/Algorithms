@@ -35,7 +35,6 @@ void push(Stack *s, int value) {
 	else {
 		s->top->min = s->top->prev->min;
 	}
-	oldTop = NULL;
 	delete oldTop;
 	s->size++;
 }
